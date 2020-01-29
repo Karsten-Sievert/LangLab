@@ -33,9 +33,8 @@ Several learning modes can be implemented:
     * Play first language
     * Record second language, 
     * rate, recalculate scores
-    * Play seconds language as confirmation, 
+    * Play seconds language as confirmation
 
-
-
+This app will not have bundled audio files. It will be tested against many freely available training material, though.
 
 
