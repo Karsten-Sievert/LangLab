@@ -9,9 +9,9 @@ Those files usually have a fixed structure, typically:
 
 * optional spoken introduction with chapter and name of the company that made the file
 * then a repeating pattern of words or phrases:
-** first language, 
-** second language, 
-** (optionally a second speaker, or other variations)
+    * first language, 
+    * second language, 
+    * (optionally a second speaker, or other variations)
 * ...repeated to the end.
 * optionally another spoken outro, e.g. repeating the company name.
 
@@ -19,4 +19,23 @@ The idea behind this project is to have an Android app that understands the stru
 
 Several learning modes can be implemented:
 
-Pronounciation training:  (first language) second language, listen
+* Pronounciation:  
+    * (Play first language) 
+    * Play seconds language, 
+    * Record second language, 
+    * rate, recalculate scores
+* Understanding:
+    * Play second language,
+    * Record first language,
+    * Rate, recalculate scores
+    * Play first language as confirmation,
+* Active vocabulary:
+    * Play first language
+    * Record second language, 
+    * rate, recalculate scores
+    * Play seconds language as confirmation, 
+
+
+
+
+
