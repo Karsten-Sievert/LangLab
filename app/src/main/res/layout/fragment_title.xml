@@ -28,36 +28,48 @@
         android:background="@color/colorBackground"
         >
 
-        <Button
-            android:id="@+id/playButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/horizontal_margin"
-            android:layout_marginEnd="@dimen/horizontal_margin"
-            android:paddingStart="@dimen/button_padding"
-            android:paddingEnd="@dimen/button_padding"
-            android:text="Play"
-            android:textColor="@color/colorSecondary"
-            android:textSize="@dimen/button_text_size"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titleImage" />
-
-        <ImageView
+        <ImageButton
             android:id="@+id/titleImage"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/image_header_height"
-            android:layout_marginStart="@dimen/horizontal_margin"
-            android:layout_marginEnd="@dimen/horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorBackground"
             android:scaleType="fitCenter"
-            app:layout_constraintBottom_toTopOf="@+id/playButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
+            android:tint="@color/colorSecondary"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_translation_icon" />
+
+        <TextView
+            android:id="@+id/helpForEmptyPackage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text='Before you can rehearse your vocabulary, you need to add a language package with audio files which you want to rehearse.  Push the "+" button to add your first package.  Aou will add a package that contains one or more files.  Each file contains several pairs of first language - second language recordings.'
+            android:textColor="@color/colorText"
+            android:textSize="24dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/titleImage"
+            tools:layout_editor_absoluteX="117dp" />
+
+        <ListView
+            android:id="@+id/packages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/helpForEmptyPackage" />
+
+        <ImageButton
+            android:id="@+id/addPackageButton3"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@color/colorBackground"
+            android:scaleType="fitCenter"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_add_circle_outline_black_24dp" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

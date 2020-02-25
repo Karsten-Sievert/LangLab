@@ -16,22 +16,19 @@
 
 <resources>
     <string name="app_name">Android Trivia</string>
-    <string name="game_over">Game Over</string>
     <string name="try_again">Try Again?</string>
-    <string name="position">Position</string>
-    <string name="select_an_avatar">Select an Avatar</string>
-    <string name="android_trivia">Android Trivia</string>
+    <string name="android_app_name">LangLab</string>
     <string name="about_text">LangLab will alow you to get more out of your language training tapes!\n\n</string>
     <string name="help_text">Install an audio file before you can use this App.\n\n</string>
-    <string name="help">Rules</string>
+    <string name="help">Help</string>
     <string name="about">About</string>
-    <string name="trivia_hint">Trivia Hint</string>
-    <string name="title_android_trivia_question">Android Trivia (%1$d/%2$d)</string>
-    <string name="title_about_trivia">About Trivia</string>
-    <string name="title_trivia_rules">Trivia Rules</string>
+    <string name="title_android_trivia_question">Android LangLab (%1$d/%2$d)</string>
+    <string name="title_about_trivia">About LangLab</string>
+    <string name="title_langlab_help">LangLab Help</string>
     <string name="share_success_text">I mastered #UdacityAndroidTrivia with %1$d/%2$d correct questions!</string>
     <string name="submit_button">Submit</string>
     <string name="congratulations">Congratulations!</string>
     <string name="share">Share</string>
     <string name="sharing_not_available">Sharing Not Available</string>
+    <string name="play">Rehearse</string>
 </resources>

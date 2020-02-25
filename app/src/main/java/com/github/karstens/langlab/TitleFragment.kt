@@ -32,22 +32,23 @@ import com.github.karstens.langlab.databinding.FragmentTitleBinding
 class TitleFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val binding: FragmentTitleBinding = DataBindingUtil.inflate(
-                inflater, R.layout.fragment_title, container, false)
-        binding.playButton.setOnClickListener { v: View ->
-            v.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
-        }
-        setHasOptionsMenu(true)
-        return binding.root
+//        val binding: FragmentTitleBinding = DataBindingUtil.inflate(
+//                inflater, R.layout.fragment_title, container, false)
+//        binding.titleImage.setOnClickListener { v: View ->
+//            v.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToAddPackageFragment())
+//        }
+//        setHasOptionsMenu(true)
+//        return binding.root
+        return inflater.inflate(R.layout.fragment_title, container, false)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
-        inflater?.inflate(R.menu.overflow_menu, menu)
+        inflater.inflate(R.menu.overflow_menu, menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        return NavigationUI.onNavDestinationSelected(item!!,
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return NavigationUI.onNavDestinationSelected(item,
                 view!!.findNavController())
                 || super.onOptionsItemSelected(item)
     }

@@ -4,6 +4,7 @@
 
     <item
         android:id="@+id/aboutFragment"
+        android:icon="@drawable/ic_translation_icon"
         android:title="@string/about" />
 
 </menu>
