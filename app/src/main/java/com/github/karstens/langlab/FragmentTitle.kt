@@ -28,8 +28,9 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.github.karstens.langlab.databinding.FragmentTitleBinding
+import kotlinx.android.synthetic.main.fragment_title.view.*
 
-class TitleFragment : Fragment() {
+class FragmentTitle : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
 //        val binding: FragmentTitleBinding = DataBindingUtil.inflate(
@@ -39,9 +40,22 @@ class TitleFragment : Fragment() {
 //        }
 //        setHasOptionsMenu(true)
 //        return binding.root
-        return inflater.inflate(R.layout.fragment_title, container, false)
+        val binding: FragmentTitleBinding = DataBindingUtil.inflate(
+                inflater, R.layout.fragment_title, container, false)
+        binding.titleImage.setOnClickListener { v: View ->
+            v.findNavController().navigate(FragmentTitleDirections.actionTitleToPackage())
+        }
+        binding.addPackageButton3.setOnClickListener { v: View ->
+            v.findNavController().navigate(FragmentTitleDirections.actionTitleToPackage())
+        }
+        setHasOptionsMenu(true)
+        return binding.root
+        // return inflater.inflate(R.layout.fragment_title, container, false)
     }
 
+    fun onClickAddPackage() {
+        // inflater.inflate
+    }
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
         inflater.inflate(R.menu.overflow_menu, menu)

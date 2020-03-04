@@ -8,7 +8,7 @@ import androidx.room.Query;
 
 @Dao
 interface DbPackageDao {
-    @Query("SELECT * from package_table ORDER BY name ASC")
+    @Query("SELECT * from package_table ORDER BY description ASC")
     fun getAlphabetizedPackages(): LiveData<List<DbPackage>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)

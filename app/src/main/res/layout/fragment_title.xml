@@ -19,7 +19,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.github.karstens.langlab.TitleFragment">
+    tools:context="com.github.karstens.langlab.FragmentTitle">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/titleConstraint"
@@ -59,6 +59,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/helpForEmptyPackage" />
 
+        <!-- android:onClick="onClickAddPackag" -->
         <ImageButton
             android:id="@+id/addPackageButton3"
             android:layout_width="64dp"

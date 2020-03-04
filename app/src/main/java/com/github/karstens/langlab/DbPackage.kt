@@ -8,5 +8,5 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "package_table")
 class DbPackage (
         @PrimaryKey
-        @ColumnInfo val name: String
+        @ColumnInfo val description: String
 )

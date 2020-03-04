@@ -20,7 +20,7 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="addPackageFragment">
+                  <entry key="attrFragmentPackage">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -37,8 +37,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="12" />
+                            <option name="x" value="217" />
+                            <option name="y" value="64" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -55,7 +55,12 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_titleFragment_to_addPackageFragment">
+                            <entry key="action_title_to_new_package">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_title_to_package">
                               <value>
                                 <LayoutPositions />
                               </value>
